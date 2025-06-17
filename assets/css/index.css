@@ -1,0 +1,79 @@
+/* index.css - Page d'accueil */
+* {
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* index.css - Nouveau style élégant */
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 42px;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Grille responsive */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Carte d'actualité */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2d3e50;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+}
+.card-text a {
+  color: #0066cc;
+  text-decoration: none;
+}

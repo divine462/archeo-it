@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(190, 190, 190, 0.649);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* -------- HEADER -------- */
+.LOGO img {
+  border-radius: 50%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: rgb(67, 67, 67);
+  color: white;
+  font-size: 20px;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.header a {
+  color: rgb(245, 241, 241);
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.header a:hover {
+  color: rgb(159, 156, 156);
+}
+
+/* -------- CARD -------- */
+.card {
+  background-color: rgba(74, 74, 74, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px 4px rgba(0, 0, 0, 0.77);
+  max-width: 600px;
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h1 {
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.card p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* -------- FORM -------- */
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: rgb(161, 161, 158);
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(111, 110, 109);
+  transform: scale(1.05);
+}
+
+/* -------- MESSAGES -------- */
+.success, .error {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.success {
+  color: lightgreen;
+}
+
+.error {
+  color: salmon;
+}
+
+/* -------- FOOTER -------- */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(54, 54, 54);
+  color: white;
+  font-size: 18px;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: rgb(142, 142, 142);
+}
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 768px) {
+  .card {
+    width: 95%;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+}
