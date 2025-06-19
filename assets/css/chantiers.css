@@ -1,61 +1,71 @@
-/* chantiers.css - Page des chantiers */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: "Georgia", serif;
-  background-color: #f0f5f9;
-  margin: 0;
-  padding: 0;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #333;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
+.LOGO img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
 }
 
-h1 {
-  text-align: center;
-  color: #006266;
-  font-size: 32px;
-  margin-bottom: 30px;
+nav {
+  flex-grow: 1;
+  text-align: right;
 }
 
-/* Grille des chantiers */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    height: 100%;
+    width: 100%;
+  /*list-style: none;
+  display: flex;
   gap: 25px;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  align-items: center;*/
 }
 
-.card {
-  background: #ffffff;
-  border: 1px solid #ccc;
-  border-left: 5px solid #006266;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+nav li {
+  display: inline-block;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-}
-
-.card-body {
-  padding: 15px;
-}
-
-.card-title {
+nav a {
+    color: rgb(245, 241, 241);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+  /*color: white;
+  text-decoration: none;
+  font-weight: 600;
   font-size: 18px;
-  color: #006266;
-  margin-bottom: 8px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;*/
 }
 
-.card-text {
-  font-size: 14px;
-  color: #444;
+nav a:hover {
+  background-color: #555;
+  color: #f0f0f0;
+}
+.Navigation {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

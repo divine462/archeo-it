@@ -41,6 +41,25 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+  <div class="LOGO">
+    <img src="assets/images/logo.png" alt="Logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.php">Accueil</a></li>
+      <li><a href="chantiers.php">Chantiers</a></li>
+      <li><a href="contact.php">Contact</a></li>
+      <li><a href="register.php">Inscription</a></li>
+      <?php if (isset($_SESSION['utilisateur'])): ?>
+        <li><a href="logout.php">Déconnexion</a></li>
+      <?php else: ?>
+        <li><a href="login.php">Connexion</a></li>
+      <?php endif; ?>
+    </ul>
+  </nav>
+</header>
+
     <div class="card">
         <h1>Connexion</h1>
 

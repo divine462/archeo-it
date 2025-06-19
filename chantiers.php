@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,6 +9,27 @@
   <link rel="stylesheet" href="assets/css/chantiers.css">
 </head>
 <body>
+  <header class="header">
+    <div class="LOGO">
+      <img src="assets/images/logo.png" alt="Logo" width="50">
+    </div>
+    <div class=Navigation>
+      <nav>
+        <ul>
+          <li><a href="index.php">Accueil</a></li>
+          <li><a href="chantiers.php">Chantiers</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <li><a href="register.php">Inscription</a></li>
+          <?php if (isset($_SESSION['utilisateur'])): ?>
+            <li><a href="logout.php">Déconnexion</a></li>
+          <?php else: ?>
+            <li><a href="login.php">Connexion</a></li>
+          <?php endif; ?>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <div class="container">
     <h1>Nos Chantiers</h1>
 
